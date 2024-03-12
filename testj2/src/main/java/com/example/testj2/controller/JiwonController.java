@@ -5,14 +5,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/test")
-public class MainController {
+@RequestMapping("Jiwon")
+public class JiwonController {
 	
-	@GetMapping("/")
-	public String home() {
-		
-		return "/main";
-		
+	@GetMapping("/jiwon")
+	public String jiwonjiwonjiwonjiwonjiwon() {
+		return "/jiwonjiwonjiwonjiwon";
 	}
-	
+
 }

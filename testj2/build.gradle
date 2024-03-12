@@ -33,6 +33,7 @@ implementation 'org.springframework.boot:spring-boot-starter-web'
 	
 	// thymeleaf를 뷰로 사용하려면
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16'// sql log
 	
 	/*
 	// 시큐리티 라이브러리(5버전)

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 제이쿼리 -->
+    <script src="js/jquey.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 여기부터 */
+        .class {
+            justify-content: center;
+            text-align: center;
+            display: flex;
+        }
+
+        .body {
+
+
+
+            width: 1000px;
+
+            border: 1px solid black;
+            align-content: center;
+            padding: 50px 0px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+
+        }
+
+        .resume_company {
+            display: inline-block;
+            height: 100px;
+            overflow: hidden;
+            width: 250px;
+            margin-bottom: 20px;
+
+        }
+
+
+        .resume_company .resume_img {
+            float: left;
+            height: 80px;
+        }
+
+        .resume_company .resume_resist {
+            float: right;
+            height: 50px;
+            text-align: center;
+            padding-top: 25px;
+            padding-right: 50px;
+        }
+
+        /* 여기까지 해드 */
+        /* 여기부터 middle */
+
+        .body .resume_title {
+            height: 60px;
+
+            overflow: hidden;
+            width: 800px;
+            display: flex;
+            flex-direction: row;
+
+            align-items: center;
+
+
+        }
+
+        .class .body .resume_title .writer {
+            height: 60px;
+
+            float: left;
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .class .body .resume_title .writer_div_title {
+            height: 40px;
+
+            float: right;
+            width: 600px;
+
+            align-content: center;
+            text-align: center;
+            margin-left: 55px;
+            border-radius: 10px;
+
+
+
+
+
+        }
+
+        .class .body .areas_of_recruitment {
+            width: 800px;
+            overflow: hidden;
+        }
+
+        .class .body .good {
+            font-size: 20px;
+            float: left;
+
+            width: 150px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+
+        .class .body .good1 {
+            float: right;
+
+            width: 600px;
+            height: 100px;
+
+        }
+
+        .resume_title_g {
+            height: 240px;
+
+            overflow: hidden;
+            width: 800px;
+
+        }
+
+        .class .body .resume_title_g .writer_g {
+            height: 60px;
+
+            float: left;
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+
+
+
+        }
+
+        .class .body .resume_title_g .writer_box {
+            height: 60px;
+
+            float: right;
+            width: 600px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .class .body .resume_title_g .writer_box .writer_div_g {
+            width: 595px;
+
+            height: 35px;
+            border-radius: 10px;
+            text-align: center;
+
+
+        }
+
+
+        /* 여기까지 middle1 */
+        /* 여기까지 middle2 */
+        .resume_title_1 {
+            height: 300px;
+            
+            overflow: hidden;
+            width: 800px;
+
+        }
+
+        .class .body .resume_title_1 .writer {
+            height: 60px;
+          
+            float: left;
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+
+
+
+        }
+
+        .class .body .resume_title_1 .writer_div {
+            height: 60px;
+            
+            float: right;
+            width: 600px;
+            align-content: center;
+            box-sizing: border-box;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+
+        .class .body .resume_title_1 .writer_div_text {
+            height: 60px;
+            
+            float: right;
+            width: 600px;
+            box-sizing: border-box;
+            overflow: hidden;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+
+        .writer_div_text_input {
+
+            height: 40px;
+
+
+            width: 600px;
+
+            align-content: center;
+            text-align: center;
+
+            border-radius: 10px;
+        }
+
+        .writer_div_text_input_wage {
+            height: 30px;
+
+
+            width: 100px;
+
+            text-align: center;
+            border-radius: 10px;
+        }
+
+
+        .class .body .resume_title_1 .writer_div .graduration {
+            float: left;
+            margin: 22px;
+        }
+
+        .class .body .resume_title_1 .writer_div .p {
+            float: left;
+            margin: 13px 0;
+            height: -22px;
+            padding: 0 0 4px 0;
+
+        }
+
+        .money {
+            height: -20px;
+
+            padding: 0 0 4px 10px;
+
+
+
+        }
+
+        /* 여기까지 middle2 */
+        /* 여기부터 middle3 */
+
+        .resume_title_good {
+            height: 360px;
+           
+            overflow: hidden;
+            width: 800px;
+
+        }
+
+        .class .body .resume_title_good .writer_good {
+            height: 60px;
+           
+            float: left;
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+
+
+
+        }
+
+        .class .body .resume_title_good .writer_div_good {
+            height: 60px;
+           
+            float: right;
+            width: 600px;
+            align-content: center;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+
+        }
+        .class .body .resume_title_good .writer_div_good_company {
+            height: 60px;
+           
+            float: right;
+            width: 600px;
+            align-content: center;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            
+        }
+
+        .writer_div_good_text {
+            height: 40px;
+
+
+            width: 600px;
+
+            align-content: center;
+            text-align: center;
+
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        .grd {
+            float: left;
+            margin: 19px;
+        }
+
+        .writer_div_text1 {
+
+            float: left;
+            margin: 18px;
+
+
+            align-content: center;
+            box-sizing: border-box;
+            overflow: hidden;
+            text-align: center;
+        }
+
+
+        /* 여기까지 middle3 */
+
+        .classCheck {
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+
+            align-items: center;
+
+        }
+
+        .classCheck .checkbox {
+            float: left;
+            display: flex;
+            flex-direction: row;
+
+            align-items: center;
+
+
+
+        }
+
+        .button {
+            height: 40px;
+            margin: 30px;
+            width: 500px;
+            border-radius: 20px;
+        }
+        .plus{
+            height: -10px;
+            padding:   0 10px 6px 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form name="topicFormReg" action="topicFormReg" method="post">
+        <div class="class">
+            <div class="body">
+                <header>
+                    <div class="resume_company">
+                        <h3 class="resume_resist">공고 등록</h3><img src="/testJ/img/KakaoTalk_20240313_155649513.gif"
+                            alt="" class="resume_img">
+                    </div>
+
+                </header>
+                <middle>
+                    <div class="resume_title">
+                        <div class="writer">
+                            <p>이력서 제목</p>
+                        </div>
+
+                        <input type="text" class="writer_div_title" placeholder="구직자가 관심가질만한 제목을 정해주세요">
+
+
+                    </div>
+
+                    <div class="areas_of_recruitment">
+                        <h2 class="good">
+                            모집분야
+                        </h2>
+                        <div class="good1"> </div>
+                    </div>
+                    <div class="resume_title_g">
+                        <div>
+                            <h5 class="writer_g">직무, 직업</h5>
+
+                            <div class="writer_box">
+                                <input type="text" class="writer_div_g" placeholder="구직자가 잘 선택하도록 직무와 직업을 적어주세요">
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="writer_g">모집분야</h5>
+
+                            <div class="writer_box">
+                                <input type="text" class="writer_div_g" placeholder="어떤분야의 구직자를 구하는지 기입해주세요">
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="writer_g">모집인원</h5>
+
+                            <div class="writer_box">
+                                <input type="text" class="writer_div_g" placeholder="모집인원을 써주세요">
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="writer_g">경력</h5>
+
+                            <div class="writer_box">
+                                <input type="text" class="writer_div_g" placeholder="신입을 구하는지 경력을 구하는지 기입해주세요">
+                            </div>
+                        </div>
+                    </div>
+                </middle>
+                <middle2>
+                    <div class="areas_of_recruitment">
+                        <h2 class="good">
+                            지원자격/
+                            근무조건
+                        </h2>
+                        <div class="good1"> </div>
+                    </div>
+                    <div class="resume_title_1">
+                        <div>
+                            <h5 class="writer">지원자학력</h5>
+
+
+                            <div class="writer_div">
+                                <input type="checkbox" class="graduration">
+                                <p class="p">졸업예정자 가능</p><select name="gd" class="grd">
+                                    <option value="졸업">졸업</option>
+                                    <option value="졸업예정자">졸업예정자</option>
+                                    <option value="졸업안함"> 졸업안함</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="writer">근무지역</h5>
+
+                            <div class="writer_div_text">
+                                <input type="text" class="writer_div_text_input" placeholder="근무지역을 적어주세요">
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="writer">근무형태</h5>
+
+
+                            <div class="writer_div_text">
+                                <p class="writer_div_text1"><input type="checkbox">정규직</p>
+                                <p class="writer_div_text1"><input type="checkbox">계약직</p class="writer_div_text">
+                                <p class="writer_div_text1"><input type="checkbox">인턴</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="writer">급여</h5>
+
+                            <div class="writer_div_text">
+                                <input type="text" class="writer_div_text_input_wage" placeholder="00원">
+                                <p class="money">원</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="writer">근무시간</h5>
+                            <div class="writer_div_text">
+                                <input type="text" class="writer_div_text_input_wage" placeholder="00시간">
+                                <p class="money">시간</p>
+                            </div>
+                        </div>
+                    </div>
+                </middle2>
+                <middle3>
+
+                    <div class="resume_title_good">
+
+                        <div>
+                            <h5 class="writer_good">담당자명</h5>
+
+                            <div class="writer_div_good">
+                                <input type="text" class="writer_div_good_text" placeholder="이름을 입력하세요">
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="writer_good">기업연락처</h5>
+                            <div class="writer_div_good_company">
+                                <input type="text" class="writer_div_text_input_wage" placeholder="000"><p class="plus">---</p><input
+                                    type="text" class="writer_div_text_input_wage" placeholder="0000"><p class="plus">---</p><input type="text"
+                                    class="writer_div_text_input_wage" placeholder="0000">
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="writer_good">이메일</h5>
+
+
+                            <div class="writer_div_good">
+                                <input type="text" class="writer_div_good_text" placeholder="이메일을 입력하세요.">
+                            </div>>
+                        </div>
+                        <div>
+                            <h5 class="writer_good">업종</h5>
+
+
+                            <div class="writer_div_good_company">
+                                <select class="Sectors">
+                                    <option value="졸업">IT업종</option>
+                                    <option value="졸업예정자">유통업종</option>
+                                    <option value="졸업안함"> 건설업종</option>
+                                    <option value="졸업">서비스업종</option>
+                                    <option value="졸업예정자">무역업종</option>
+                                    <option value="졸업안함"> 애니메이션 업종</option>
+                                    <option value="졸업">교육업종</option>
+                                    <option value="졸업예정자">금융업종</option>
+                                    <option value="졸업안함"> 식품업종</option>
+                                    <option value="졸업">스포츠업종</option>
+                                    <option value="졸업예정자">미용업종</option>
+                                    <option value="졸업안함"> 페션업종</option>
+                                    
+
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="writer_good">핸드폰번호</h5>
+
+
+                            <div class="writer_div_good_company">
+                                <input type="text" class="writer_div_text_input_wage" placeholder="000"><p class="plus">---</p><input
+                                    type="text" class="writer_div_text_input_wage" placeholder="0000"><p class="plus">---</p><input type="text"
+                                    class="writer_div_text_input_wage" placeholder="0000">
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="writer_good">담당자 부서명</h5>
+
+
+                            <div class="writer_div_good">
+                                <input type="text" class="writer_div_good_text" placeholder="부서명을 입력하세요">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </middle3>
+                <footer>
+                    <div class="classCheck">
+                        <input type="checkbox" class="checkbox">
+                        <p>등록한 공고는 oo사이트에 개제됩니다. 단 사이트 규정에 따라 등록이 거절이 수도 있습니다</p>
+                    </div>
+                    <button class="button">이력서 등록</button>
+
+                </footer>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </form>
+</body>
+<script>
+
+</script>
+
+</html>
